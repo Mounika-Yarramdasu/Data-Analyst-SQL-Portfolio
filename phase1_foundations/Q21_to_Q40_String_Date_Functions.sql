@@ -13,7 +13,7 @@
 Use Analysis;
 
 -- ─────────────────────────────────────────────────
--- Q21 ★ Find employees hired in the year 2022.
+-- Q21  Find employees hired in the year 2022.
 -- Concept: YEAR() date function
 -- ─────────────────────────────────────────────────
 Select * from Employee
@@ -39,7 +39,7 @@ Select Name from Employee
 where Name like '%a';
 
 -- ─────────────────────────────────────────────────
--- Q25 ★ Show employees with salary exactly 78000.
+-- Q25  Show employees with salary exactly 78000.
 -- Concept: WHERE = exact match
 -- Note: salary = 78000 (without quotes) is best practice
 --       for numeric columns. SQL Server auto-converts
@@ -73,7 +73,7 @@ Select Name + ' ' + City as 'Name & City' from Employee;
 -- Select CONCAT(Name, ' ', City) as 'Name & City' from Employee;
 
 -- ─────────────────────────────────────────────────
--- Q29 ★ Show the first 3 characters of each employee's name.
+-- Q29  Show the first 3 characters of each employee's name.
 -- Concept: LEFT() string function
 -- ─────────────────────────────────────────────────
 Select LEFT(Name, 3) as 'First 3 Letters' from Employee;
@@ -97,7 +97,7 @@ where MONTH(order_date) = 1 AND YEAR(order_date) = 2024;
 -- where order_date >= '2024-01-01' AND order_date < '2024-02-01'
 
 -- ─────────────────────────────────────────────────
--- Q32 ★ List products with price less than 1000.
+-- Q32  List products with price less than 1000.
 -- Concept: WHERE on Product table with < operator
 -- ─────────────────────────────────────────────────
 Select * from Product
@@ -117,7 +117,7 @@ where Status = 'Delivered';
 Select LOWER(Name) as Name from Customer;
 
 -- ─────────────────────────────────────────────────
--- Q35 ★ List all products sorted by price ascending.
+-- Q35  List all products sorted by price ascending.
 -- Concept: ORDER BY ASC (ASC is default, can be omitted)
 -- ─────────────────────────────────────────────────
 Select Name, Category, Price from Product
@@ -146,7 +146,7 @@ where MONTH(order_date) = 4 AND YEAR(order_date) = 2024;
 Select Distinct Status from Orders;
 
 -- ─────────────────────────────────────────────────
--- Q39 ★ Count total number of products.
+-- Q39  Count total number of products.
 -- Concept: COUNT(*) on Product table
 -- ─────────────────────────────────────────────────
 Select Count(*) as 'Total No Of Products' from Product;
