@@ -1,4 +1,4 @@
-# SQL Query Practice Portfolio
+# SQL Query Portfolio
 ### Mounika Yarramdasu | Data Analyst
 
 Data Analyst with 2 years of experience at Wipro.
